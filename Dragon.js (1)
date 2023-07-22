@@ -1,0 +1,14 @@
+setInterval(function texto(){
+  var texto=document.getElementById("texto")
+  var rando=Math.round(Math.random()*2)
+  var textos=["A digestão, respiração, circulação do sangue, excreção e transpiração, exigem que se beba água. Ela ajuda na renovação das células e dos líquidos intercelulares.","Curiosidade: A maioria da água, em torno de 70%, é utilizada na produção agrícola, o que possibilita a irrigação do solo e a existência dos vegetais e animais, para produção de alimentos.","Este site está em desenvolvimento"]
+  
+  texto.style.display="none"
+  
+  setTimeout(function text(){
+    texto.style.display="block"
+    if(rando == 0) texto.style.left="0px"
+    if(rando == 1) texto.style.left="0px"
+    texto.innerHTML=textos[rando]
+  }, 2000)
+}, 6000)
